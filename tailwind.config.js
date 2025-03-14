@@ -19,12 +19,14 @@ module.exports = {
     extend: {
       colors: {
         // Colores personalizados para Parchados
-        background: "#0E0A07", // Negro profundo
-        secondary: "#00857C", // Verde azulado
-        accent: "#933023", // Rojo ladrillo
-        highlight: "#234930", // Verde oscuro
-        "light-bg": "#FFF", // Beige
-        "primary-btn": "#D67D20", // Naranja deportivo
+        background: "#F8F5F0", // Beige claro
+        secondary: "#2F4B7C", // Azul más claro
+        accent: "#EAC67A", // Amarillo dorado
+        highlight: "#003F5C", // Azul profundo
+        "light-bg": "#F8F5F0", // Beige claro
+        "primary-btn": "#003F5C", // Azul profundo
+        "text-color": "#1E293B", // Gris oscuro
+        "detail-color": "#A5C8E1", // Azul pastel
         success: "#34C759", // Verde para confirmaciones
         error: "#FF3B30", // Rojo para errores
         warning: "#FFD700", // Amarillo para advertencias
@@ -32,27 +34,27 @@ module.exports = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        foreground: "hsl(var(--foreground))",
+        foreground: "#1E293B",
 
         primary: {
-          DEFAULT: "#D67D20",
-          foreground: "#FCF3E3",
+          DEFAULT: "#003F5C",
+          foreground: "#F8F5F0",
         },
         secondary: {
-          DEFAULT: "#00857C",
-          foreground: "#FCF3E3",
+          DEFAULT: "#2F4B7C",
+          foreground: "#F8F5F0",
         },
         destructive: {
           DEFAULT: "#FF3B30",
-          foreground: "#FCF3E3",
+          foreground: "#F8F5F0",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#933023",
-          foreground: "#FCF3E3",
+          DEFAULT: "#EAC67A",
+          foreground: "#1E293B",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",

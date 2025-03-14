@@ -36,7 +36,7 @@ export function Sidebar() {
       {/* Sidebar */}
       <aside
         className={cn(
-          "bg-background text-light-bg w-64 flex-shrink-0 flex flex-col h-screen transition-all duration-300 ease-in-out",
+          "bg-highlight text-light-bg w-64 flex-shrink-0 flex flex-col h-screen transition-all duration-300 ease-in-out",
           "fixed md:static z-40",
           isOpen ? "left-0" : "-left-64 md:left-0",
         )}
@@ -52,8 +52,8 @@ export function Sidebar() {
             />
           </div>
           <div>
-            <h1 className="text-2xl font-display font-bold text-primary-btn">Parchados</h1>
-            <p className="text-xs text-secondary">Panel de Administración</p>
+            <h1 className="text-2xl font-display font-bold text-accent">Parchados</h1>
+            <p className="text-xs text-detail-color">Panel de Administración</p>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ export function Sidebar() {
                   href={item.href}
                   className="flex items-center px-4 py-3 text-light-bg hover:bg-secondary/20 rounded-md transition-colors duration-200 group"
                 >
-                  <item.icon className="h-5 w-5 mr-3 text-secondary group-hover:text-primary-btn transition-colors duration-200" />
+                  <item.icon className="h-5 w-5 mr-3 text-accent group-hover:text-detail-color transition-colors duration-200" />
                   <span className="font-medium">{item.name}</span>
                 </Link>
               </li>
@@ -82,7 +82,7 @@ export function Sidebar() {
             </div>
             <div className="ml-3">
               <p className="text-sm font-medium">Admin Deportivo</p>
-              <p className="text-xs text-secondary">admin@parchados.com</p>
+              <p className="text-xs text-detail-color">admin@parchados.com</p>
             </div>
           </div>
         </div>

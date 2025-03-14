@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { Search, Bell, Calendar } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Search, Calendar } from "lucide-react"
 import { Input } from "@/components/ui/input"
+import { NotificationDropdown } from "@/components/notification-dropdown"
 
 export function DashboardHeader() {
   const [date] = useState(new Date())
@@ -18,8 +18,8 @@ export function DashboardHeader() {
   return (
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
       <div>
-        <h1 className="text-3xl font-display font-bold text-accent">Dashboard de Administración</h1>
-        <p className="text-highlight flex items-center mt-1">
+        <h1 className="text-3xl font-display font-bold text-highlight">Dashboard de Administración</h1>
+        <p className="text-text-color flex items-center mt-1">
           <Calendar className="h-4 w-4 mr-2" />
           {formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1)}
         </p>
@@ -31,14 +31,11 @@ export function DashboardHeader() {
           <Input
             type="search"
             placeholder="Buscar..."
-            className="pl-10 bg-white border-secondary focus:border-primary-btn"
+            className="pl-10 bg-white border-secondary focus:border-accent"
           />
         </div>
 
-        <Button variant="ghost" className="relative p-2 bg-white rounded-full">
-          <Bell className="h-5 w-5 text-highlight" />
-          <span className="absolute top-0 right-0 h-2 w-2 bg-error rounded-full"></span>
-        </Button>
+        <NotificationDropdown />
       </div>
     </div>
   )

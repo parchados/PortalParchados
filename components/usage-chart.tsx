@@ -21,19 +21,19 @@ export function UsageChart() {
         config={{
           futbol: {
             label: "Fútbol",
-            color: "hsl(var(--chart-1, 214, 90%, 52%))",
+            color: "hsl(212, 100%, 18%)", // #003F5C
           },
           tenis: {
             label: "Tenis",
-            color: "hsl(var(--chart-2, 120, 100%, 30%))",
+            color: "hsl(221, 47%, 33%)", // #2F4B7C
           },
           baloncesto: {
             label: "Baloncesto",
-            color: "hsl(var(--chart-3, 30, 100%, 50%))",
+            color: "hsl(39, 70%, 70%)", // #EAC67A
           },
           voleibol: {
             label: "Voleibol",
-            color: "hsl(var(--chart-4, 271, 100%, 50%))",
+            color: "hsl(203, 52%, 76%)", // #A5C8E1
           },
         }}
         className="h-full"
