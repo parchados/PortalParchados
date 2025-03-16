@@ -1,7 +1,7 @@
 import type React from "react"
 import "./globals.css"
 import { Inter, Montserrat } from "next/font/google"
-import { Sidebar } from "@/components/sidebar"
+import { AuthProvider } from "@/contexts/auth-context"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,10 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} ${montserrat.variable} font-sans antialiased`}>
-        <div className="flex h-screen bg-light-bg">
-          <Sidebar />
-          <main className="flex-1 overflow-auto">{children}</main>
-        </div>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   )

@@ -96,3 +96,30 @@
   @apply font-display font-semibold text-secondary;
 }
 
+/* Añadir estos estilos al final del archivo */
+
+@media (max-width: 768px) {
+  .ml-64 {
+    margin-left: 0;
+  }
+
+  /* Hacer que el sidebar sea un overlay en móviles */
+  aside.fixed {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  aside.fixed.open {
+    transform: translateX(0);
+  }
+
+  /* Botón para mostrar el sidebar en móviles */
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 60;
+  }
+}
+
